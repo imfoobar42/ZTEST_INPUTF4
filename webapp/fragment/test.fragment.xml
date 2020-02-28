@@ -1,0 +1,15 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog xmlns="sap.m" title="Dialog for List binding" items="{path :'oEmpModel>/Employees'}" confirm="onListPress">
+		<!--<List headerText="Employees" items="{path :'oEmpModel>/Employees'}" selectionChange="onListPress1">-->
+		<StandardListItem title="{oEmpModel>Empid}" description="{oEmpModel>EmpName}"/>
+		<!--<Button text="Close" press="onClose"/>-->
+	</SelectDialog>
+</core:FragmentDefinition>
+<!--<Dialog xmlns="sap.m" title="XML Fragment Dialog">-->
+<!--	<List headerText="Students" items="{ path: 'oModel>/Students' }">-->
+<!--		<StandardListItem title="{oModel>Sid}" description="{oModel>Name}"/>-->
+<!--	</List>-->
+<!--	<buttons>-->
+<!--		<Button text="Close" press="closeDialog"/>-->
+<!--	</buttons>-->
+<!--</Dialog>-->
